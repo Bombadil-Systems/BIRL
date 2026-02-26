@@ -5,7 +5,7 @@ BIRL Test Harness
 Generates a battery of test artifacts using every forge operation,
 then provides a structured framework for testing them against:
 
-1. AV/EDR detection (VirusTotal, Windows Defender, ClamAV)
+1. AV/EDR detection (static scanners, Windows Defender, ClamAV)
 2. CDR tools (Votiro, OPSWAT, Glasswall, etc.)
 3. File upload validators (web apps, email gateways)
 4. Manual verification (does the artifact actually work as intended)
