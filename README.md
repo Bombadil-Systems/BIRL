@@ -1,4 +1,4 @@
-# BIRL — Byte Interpretation Rewriting Language
+# BIRL: Byte Interpretation Rewriting Language
 
 > Security research tool for analyzing parser coverage gaps across file formats. Built for detection engineers, pentesters, and format researchers. Use responsibly and only on systems you're authorized to test.
 
