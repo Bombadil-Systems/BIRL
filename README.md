@@ -22,7 +22,7 @@ Requires Python 3.10+. Dependencies: `pefile`, `capstone`, `kaitaistruct`, `netw
 birl identify suspicious.exe
 ```
 
-**Measure residue** — bytes no parser claims, ranked by size:
+**Measure residue**: bytes no parser claims, ranked by size:
 
 ```bash
 birl residue firmware.bin -v
@@ -34,7 +34,7 @@ birl residue firmware.bin -v
 birl gadgets /usr/bin/ls
 ```
 
-**Build polyglots** — files valid under two formats simultaneously:
+**Build polyglots**: files valid under two formats simultaneously:
 
 ```bash
 birl polyglot cover.png payload.zip -o stego.png
@@ -64,7 +64,7 @@ birl wrap shellcode.bin --as zip -o delivery.zip
 birl path PE ZIP --strategy sanitization --compare
 ```
 
-**Execute BIRL programs** — a pipe syntax for chaining operations:
+**Execute BIRL programs** - a pipe syntax for chaining operations:
 
 ```bash
 birl run exploit_chain.birl -v
@@ -108,12 +108,12 @@ for name, coord in result.coordinates.items():
 
 ## Architecture
 
-- **Contexts** — Format parsers that return validity plus byte-level coverage maps. Supported: PE, ELF, ZIP, PNG, x86_64, UTF-8.
-- **Residue** — The complement of all claimed byte ranges. These are the bytes no parser accounts for.
-- **Graph** — Weighted interpretation transitions between contexts, with A* pathfinding across strategies (zero-copy, sanitization, robust, fastest, balanced).
-- **Forge** — Transformation engine: polyglot construction, ROP chain assembly, payload injection, format wrapping/stripping.
-- **Compiler** — Lexer and parser for the BIRL pipe syntax.
-- **Runtime** — Executes compiled BIRL programs with full provenance tracking (every operation records context, byte hash, and chain history).
+- **Contexts** - Format parsers that return validity plus byte-level coverage maps. Supported: PE, ELF, ZIP, PNG, x86_64, UTF-8.
+- **Residue** - The complement of all claimed byte ranges. These are the bytes no parser accounts for.
+- **Graph** - Weighted interpretation transitions between contexts, with A* pathfinding across strategies (zero-copy, sanitization, robust, fastest, balanced).
+- **Forge** - Transformation engine: polyglot construction, ROP chain assembly, payload injection, format wrapping/stripping.
+- **Compiler** - Lexer and parser for the BIRL pipe syntax.
+- **Runtime** - Executes compiled BIRL programs with full provenance tracking (every operation records context, byte hash, and chain history).
 
 ## Tests
 
@@ -141,8 +141,8 @@ Each artifact ships with a JSON manifest describing what it is, what contexts it
 
 ## License
 
-MIT — see [LICENSE](LICENSE).
+MIT - see [LICENSE](LICENSE).
 
 ---
 
-*Bombadil Systems LLC — [bombadil.systems](https://bombadil.systems)*
+*Bombadil Systems LLC - [bombadil.systems](https://bombadil.systems)*
