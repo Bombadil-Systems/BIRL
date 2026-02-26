@@ -4,7 +4,7 @@
 
 A framework for analyzing how bytes are interpreted across file formats, finding the gaps between parsers, and building transformations that exploit those gaps.
 
-Most security tools parse files one format at a time. BIRL parses them as *many formats simultaneously*, measures which bytes each parser actually claims, and identifies the ones nobody does. Those unclaimed bytes — the residue — are where polyglots live, where payloads hide, and where detection breaks down.
+Most security tools parse files one format at a time. BIRL parses them as *many formats simultaneously*, measures which bytes each parser actually claims, and identifies the ones nobody does. Those unclaimed bytes, the residue, are where polyglots live, where payloads hide, and where detection breaks down.
 
 ## Install
 
